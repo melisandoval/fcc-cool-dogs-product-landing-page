@@ -5,95 +5,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="product.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="myScript.js"></script>
     <title>Document</title>
   </head>
   <body>
     <!-- header -->
     <header id="header">
-      <img src="" alt="" id="header-img" />
-      <!-- la imagen debe ser un logo -->
+      <div class="logo-div" id="logo-div">
+        <a href="./product.html"
+          ><img src="./img/logo.png" alt="cool-dogs-logo" id="header-img"
+        /></a>
+        <p class="logo-text">Cool Dogs</p>
+      </div>
       <nav id="nav-bar">
-        <a href="#section1" class="nav-link">Section1</a>
-        <a href="#section2" class="nav-link">Section2</a>
-        <a href="#section3" class="nav-link">Section3</a>
+        <p><a href="#highlights-div" class="nav-link">Shop </a></p>
+        <p><a href="#description-div" class="nav-link">Blog </a></p>
+        <p><a href="#about-div" class="nav-link">About </a></p>
       </nav>
     </header>
     <!-- main -->
-    <main>
-      <!-- section 1 -->
-      <section id="section1">
-        <h2>This is section 1</h2>
+    <main id="main">
+      <!-- product container (images and information) -->
+      <section class="product-section">
+        <!-- carrousel container-->
+        <div class="carrousel-container">
+          <div>
+            <iframe
+              id="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/7fwIirJOKJA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <!-- product information (text)-->
+        <section class="product-info">
+          <div class="product-title-div">
+            <h1>Hand knitted sweater for a small dog (customizable)</h1>
+          </div>
+          <div id="highlights-div">
+            <h2>Highlights</h2>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+          <div class="add-to-cart-btn-div">
+            <button class="add-to-cart-button">Add to cart</button>
+          </div>
+          <div id="section3">
+            <h2>Delivery and Return</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+              repellat.
+            </p>
+          </div>
+        </section>
       </section>
-      <!-- section 2 -->
-      <section id="section2">
-        <h2>This is section 2</h2>
-      </section>
-      <!-- section 3 -->
-      <section id="section3">
-        <h2>This is section 3</h2>
-      </section>
-      <!-- Slideshow Gallery-->
-      <section class="slideshow-gallery">
-        <div>
-          <iframe
-            id="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/7fwIirJOKJA"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+      <!-- description section -->
+      <section>
+        <div id="description-div">
+          <h2>Description</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, eum.
+            Magni nobis possimus velit dolor nostrum a ut enim rem minus
+            corporis rerum in voluptatem culpa impedit eligendi illo quia
+            cupiditate beatae, exercitationem tempore nemo ullam expedita quas
+            veritatis? Perferendis similique voluptates quis laudantium minus
+            dolor dicta eveniet ducimus earum?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, eum.
+            Magni nobis possimus velit dolor nostrum a ut enim rem minus
+            corporis rerum in voluptatem culpa impedit eligendi illo quia
+            cupiditate beatae, exercitationem tempore nemo ullam expedita quas
+            veritatis? Perferendis similique voluptates quis laudantium minus
+            dolor dicta eveniet ducimus earum?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, eum.
+            Magni nobis possimus velit dolor nostrum a ut enim rem minus
+            corporis rerum in voluptatem culpa impedit eligendi illo quia
+            cupiditate beatae, exercitationem tempore nemo ullam expedita quas
+            veritatis? Perferendis similique voluptates quis laudantium minus
+            dolor dicta eveniet ducimus earum?
+          </p>
+        </div>
+        <div class="customization-div">
+          <h2>Customization</h2>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <p>
+              <label for="email"
+                >This is a handmade product. If you want to add an embroidery
+                with your dog's name, leave us your email and we will contact
+                you.
+              </label>
+            </p>
+            <div class="input-and-button">
+              <p>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email..."
+                  size="40"
+                />
+              </p>
+              <p>
+                <input
+                  type="submit"
+                  id="submit"
+                  value="Send my email"
+                  class="submit-button"
+                />
+              </p>
+            </div>
+          </form>
         </div>
       </section>
-      <!-- form section -->
+      <!-- About section-->
       <section>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <div id="about-div">
+          <h2>About</h2>
           <p>
-            <label for="email"
-              >This is a handmade product. If you want to add an embroidery with
-              your dog's name, leave us your email and we will contact you.
-            </label>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, eum.
+            Magni nobis possimus velit dolor nostrum a ut enim rem minus
+            corporis rerum in voluptatem culpa impedit eligendi illo quia
+            cupiditate beatae, exercitationem tempore nemo ullam expedita quas
+            veritatis? Perferendis similique voluptates quis laudantium minus
+            dolor dicta eveniet ducimus earum?
           </p>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email..."
-          />
-          <input
-            type="submit"
-            id="submit"
-            value="Send my email"
-            class="submit-button"
-          />
-        </form>
+        </div>
       </section>
     </main>
     <footer>
-      <p class="footer-text">
-        Sources: product images and description from
-        <a
-          href="https://www.etsy.com/listing/1096928007/sweater-for-a-small-dog-knitted-clothes?click_key=574cf05d471f77525631844b08819c3e21e34dfa%3A1096928007&click_sum=c5748745&ref=shop_home_recs_3"
-          target="_blank"
-          >the Etsy shop "WebTheDogClothing"</a
-        >.
-      </p>
-      <p>
-        Product landing page coded by Melisa Sandoval fulfilling
-        <a
-          href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page"
-          target="_blank"
-          >this user stories</a
-        >
-        for the
-        <a
-          href="https://www.freecodecamp.org/learn/responsive-web-design/"
-          target="_blank"
-          >Free Code Camp Responsive Web Design course</a
-        >.
-      </p>
+      <div class="footer-content">
+        <p>
+          Sources: product images and description from
+          <a
+            href="https://www.etsy.com/listing/1096928007/sweater-for-a-small-dog-knitted-clothes?click_key=574cf05d471f77525631844b08819c3e21e34dfa%3A1096928007&click_sum=c5748745&ref=shop_home_recs_3"
+            target="_blank"
+            >the Etsy shop "WebTheDogClothing"</a
+          >, image logo from
+          <a
+            href="https://image.shutterstock.com/image-vector/cute-corgi-dog-sunglasses-peeking-260nw-1715992204.jpg"
+            target="_blank"
+            >Shutterstock</a
+          >, video from
+          <a href="https://www.youtube.com/watch?v=7fwIirJOKJA" target="_blank"
+            >"Chihuahua Cedric" YouTube channel</a
+          >.
+        </p>
+        <p>
+          Product landing page coded by Melisa Sandoval fulfilling
+          <a
+            href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page"
+            target="_blank"
+            >this user stories</a
+          >
+          for the
+          <a
+            href="https://www.freecodecamp.org/learn/responsive-web-design/"
+            target="_blank"
+            >Free Code Camp Responsive Web Design course</a
+          >.
+        </p>
+      </div>
     </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
