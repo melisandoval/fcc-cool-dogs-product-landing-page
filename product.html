@@ -19,90 +19,180 @@
     <header id="header">
       <div class="logo-div" id="logo-div">
         <a href="./product.html"
-          ><img src="./img/logo.png" alt="cool-dogs-logo" id="header-img"
+          ><img
+            src="./img/header/logo.png"
+            alt="cool-dogs-logo"
+            id="header-img"
         /></a>
         <p class="logo-text">Cool Dogs</p>
       </div>
       <nav id="nav-bar">
-        <p><a href="#highlights-div" class="nav-link">Shop </a></p>
-        <p><a href="#description-div" class="nav-link">Blog </a></p>
-        <p><a href="#about-div" class="nav-link">About </a></p>
+        <!-- don't delete! 
+            invisible paragraph for centering navbar links with grid -->
+        <p></p>
+        <div class="nav-bar-links">
+          <p><a href="#highlights-div" class="nav-link">Shop </a></p>
+          <p><a href="#description-div" class="nav-link">Blog </a></p>
+          <p><a href="#about-div" class="nav-link">About </a></p>
+        </div>
+        <div class="cart-div">
+          <img src="./img/cart.png" alt="cart-button" class="cart-button" />
+        </div>
       </nav>
     </header>
     <!-- main -->
     <main id="main">
       <!-- product container (images and information) -->
       <section class="product-section">
-        <!-- carrousel container-->
-        <div class="carrousel-container">
-          <div>
-            <iframe
-              id="video"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7fwIirJOKJA"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+        <!-- carrousel -->
+        <div class="carrousel-section">
+          <div class="mayor-carrousel-container">
+            <div class="carrousel-container">
+              <div class="images-container">
+                <div class="carrousel-image" style="display: block">
+                  <img
+                    src="./img/carrousel/dog1.png"
+                    alt="Picture 1 of dog wearing product"
+                  />
+                </div>
+                <div class="carrousel-image">
+                  <img
+                    src="./img/carrousel/dog2.png"
+                    alt="Picture 2 of dog wearing product"
+                  />
+                </div>
+                <div class="carrousel-image">
+                  <img
+                    src="./img/carrousel/dog3.png"
+                    alt="Picture 3 of dog wearing product"
+                  />
+                </div>
+                <div class="carrousel-image">
+                  <img
+                    src="./img/carrousel/product.png"
+                    alt="Picture of product 1"
+                  />
+                </div>
+                <div class="carrousel-image">
+                  <img
+                    src="./img/carrousel/product2.png"
+                    alt="Picture of product 2"
+                  />
+                </div>
+                <div class="carrousel-image">
+                  <div class="video-container">
+                    <iframe
+                      id="video"
+                      src="https://www.youtube.com/embed/7fwIirJOKJA?controls=0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="./img/carrousel/dog1.png"
+                    style="width: 100%"
+                    onclick="currentSlide(1)"
+                    alt="Picture 1 of dog wearing product."
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="./img/carrousel/dog2.png"
+                    style="width: 100%"
+                    onclick="currentSlide(2)"
+                    alt="Picture 2 of dog wearing product."
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="./img/carrousel/dog3.png"
+                    style="width: 100%"
+                    onclick="currentSlide(3)"
+                    alt="Picture 3 of dog wearing product."
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="./img/carrousel/product.png"
+                    style="width: 100%"
+                    onclick="currentSlide(4)"
+                    alt="Picture of product."
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="./img/carrousel/product2.png"
+                    style="width: 100%"
+                    onclick="currentSlide(5)"
+                    alt="Picture 2 of product."
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="./img/carrousel/video.png"
+                    style="width: 100%"
+                    onclick="currentSlide(6)"
+                    alt="Video thumnail"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="arrows-container">
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
           </div>
         </div>
+
         <!-- product information (text)-->
         <section class="product-info">
           <div class="product-title-div">
             <h1>Hand knitted sweater for a small dog (customizable)</h1>
+            <p class="price">€45</p>
           </div>
           <div id="highlights-div">
             <h2>Highlights</h2>
             <ul>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
+              <li>100% cotton.</li>
+              <li>Color: yellow.</li>
+              <li>Size: S.</li>
             </ul>
           </div>
           <div class="add-to-cart-btn-div">
             <button class="add-to-cart-button">Add to cart</button>
           </div>
-          <div id="section3">
-            <h2>Delivery and Return</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
-              repellat.
-            </p>
-          </div>
+          <h2>More information:</h2>
+          <ul>
+            <li><a href="#description-div">Description</a></li>
+            <li><a href="#customization-div">Customization</a></li>
+            <li><a href="#shipping-div">Shipping and return policies</a></li>
+          </ul>
         </section>
       </section>
       <!-- description section -->
       <section>
         <div id="description-div">
-          <h2>Description</h2>
+          <h2 id="description">Description</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, eum.
-            Magni nobis possimus velit dolor nostrum a ut enim rem minus
-            corporis rerum in voluptatem culpa impedit eligendi illo quia
-            cupiditate beatae, exercitationem tempore nemo ullam expedita quas
-            veritatis? Perferendis similique voluptates quis laudantium minus
-            dolor dicta eveniet ducimus earum?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, eum.
-            Magni nobis possimus velit dolor nostrum a ut enim rem minus
-            corporis rerum in voluptatem culpa impedit eligendi illo quia
-            cupiditate beatae, exercitationem tempore nemo ullam expedita quas
-            veritatis? Perferendis similique voluptates quis laudantium minus
-            dolor dicta eveniet ducimus earum?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, eum.
-            Magni nobis possimus velit dolor nostrum a ut enim rem minus
-            corporis rerum in voluptatem culpa impedit eligendi illo quia
-            cupiditate beatae, exercitationem tempore nemo ullam expedita quas
-            veritatis? Perferendis similique voluptates quis laudantium minus
-            dolor dicta eveniet ducimus earum?
+            Too cold weather for your little canine friend? Wanting for a little
+            splash of color and style? This yellow sweater is all your dog
+            needs! Handmade with soft 100% cotton wool, this sweater will keep
+            your dog warm, stylish and super cute!
           </p>
         </div>
-        <div class="customization-div">
+        <div id="customization-div">
           <h2>Customization</h2>
           <form id="form" action="https://www.freecodecamp.com/email-submit">
             <p>
@@ -133,26 +223,54 @@
             </div>
           </form>
         </div>
+        <div id="shipping-div">
+          <h2>Shipping and return policies</h2>
+          <p>
+            <li>Cost to ship: free.</li>
+            <li>Returns & exchanges: Accepted.</li>
+          </p>
+        </div>
       </section>
       <!-- About section-->
       <section>
         <div id="about-div">
-          <h2>About</h2>
+          <h2>About Cool Dogs</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, eum.
-            Magni nobis possimus velit dolor nostrum a ut enim rem minus
-            corporis rerum in voluptatem culpa impedit eligendi illo quia
-            cupiditate beatae, exercitationem tempore nemo ullam expedita quas
-            veritatis? Perferendis similique voluptates quis laudantium minus
-            dolor dicta eveniet ducimus earum?
+            Cool Dogs is a company founded by two sisters who believe that our
+            little canine friends deserve as much love as we can give them.
+            That's why we create clothes to keep them warm and beautiful! 
           </p>
+          <p>
+            After creating many clothes for the dogs in our family, we decided
+            to create Cool Dogs to share our designs with the world. All of our
+            products are handmade with love and have soft and quality materials.
+            We hope all the dogs and their human friends enjoy very much their
+            Cool Dogs piece!
+          </p>
+          <!-- <div class="video-section">
+            <div class="video-container">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/7fwIirJOKJA?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div> -->
         </div>
       </section>
     </main>
     <footer>
       <div class="footer-content">
         <p>
-          Sources: product images and description from
+          Disclaimer: Cool Dogs is a made up company and this product is not for
+          sale here. This is a course project from a web development student.
+        </p>
+        <p>
+          Sources: all the product images are from
           <a
             href="https://www.etsy.com/listing/1096928007/sweater-for-a-small-dog-knitted-clothes?click_key=574cf05d471f77525631844b08819c3e21e34dfa%3A1096928007&click_sum=c5748745&ref=shop_home_recs_3"
             target="_blank"
@@ -162,13 +280,13 @@
             href="https://image.shutterstock.com/image-vector/cute-corgi-dog-sunglasses-peeking-260nw-1715992204.jpg"
             target="_blank"
             >Shutterstock</a
-          >, video from
+          >, video from YouTube channel
           <a href="https://www.youtube.com/watch?v=7fwIirJOKJA" target="_blank"
-            >"Chihuahua Cedric" YouTube channel</a
+            >"Chihuahua Cedric"</a
           >.
         </p>
         <p>
-          Product landing page coded by Melisa Sandoval fulfilling
+          This page was coded fulfilling
           <a
             href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page"
             target="_blank"
