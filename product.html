@@ -40,12 +40,15 @@
         </div>
       </nav>
     </header>
-    <!-- main -->
+
     <main id="main">
       <!-- product container (images and information) -->
       <section class="product-section">
-        <!-- carrousel -->
+        <!-- carrousel container with prev and next buttons -->
         <div class="carrousel-section">
+          <!-- prev button -->
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <!-- carrousel -->
           <div class="mayor-carrousel-container">
             <div class="carrousel-container">
               <div class="images-container">
@@ -149,11 +152,9 @@
                 </div>
               </div>
             </div>
-            <div class="arrows-container">
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
-            </div>
           </div>
+          <!-- next button -->
+          <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
 
         <!-- product information (text)-->
@@ -173,20 +174,14 @@
           <div class="add-to-cart-btn-div">
             <button class="add-to-cart-button">Add to cart</button>
           </div>
-          <h2>More information:</h2>
-          <ul>
-            <li><a href="#description-div">Description</a></li>
-            <li><a href="#customization-div">Customization</a></li>
-            <li><a href="#shipping-div">Shipping and return policies</a></li>
-          </ul>
         </section>
       </section>
-      <!-- description section -->
-      <section>
+      <!-- more information section -->
+      <section class="more-information">
         <div id="description-div">
           <h2 id="description">Description</h2>
           <p>
-            Too cold weather for your little canine friend? Wanting for a little
+            Too cold weather for your little canine friend? Wanting a little
             splash of color and style? This yellow sweater is all your dog
             needs! Handmade with soft 100% cotton wool, this sweater will keep
             your dog warm, stylish and super cute!
@@ -197,9 +192,8 @@
           <form id="form" action="https://www.freecodecamp.com/email-submit">
             <p>
               <label for="email"
-                >This is a handmade product. If you want to add an embroidery
-                with your dog's name, leave us your email and we will contact
-                you.
+                >If you want to add an embroidery with your dog's name, leave us
+                your email and we will contact you.
               </label>
             </p>
             <div class="input-and-button">
@@ -232,7 +226,7 @@
         </div>
       </section>
       <!-- About section-->
-      <section>
+      <section class="about">
         <div id="about-div">
           <h2>About Cool Dogs</h2>
           <p>
@@ -247,22 +241,10 @@
             We hope all the dogs and their human friends enjoy very much their
             Cool Dogs piece!
           </p>
-          <!-- <div class="video-section">
-            <div class="video-container">
-              <iframe
-                width="100%"
-                height="315"
-                src="https://www.youtube.com/embed/7fwIirJOKJA?controls=0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div> -->
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer>
       <div class="footer-content">
         <p>
