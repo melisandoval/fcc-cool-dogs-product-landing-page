@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- Welcome 😀
+Thank you for taking the time to check my code.
+If you have any suggestions or questions, please 
+don't hesitate to contact me at melisandoval@live.com.ar-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,11 +35,38 @@
       <!-- don't delete! 
             invisible paragraph for centering navbar links with grid -->
       <p></p>
-      <div class="nav-bar-links">
-        <p><a href="#" class="nav-link">Shop </a></p>
-        <p><a href="#" class="nav-link">Blog </a></p>
-        <p><a href="#" class="nav-link">About </a></p>
-      </div>
+      <!-- Navbar  links as an unordered list for accessibility -->
+      <ul class="nav-bar-links">
+        <li>
+          <div class="dropdown">
+            <p><a href="#" class="nav-link shop">Clothing</a></p>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="#">Coats</a></li>
+                <li><a href="#">Sweaters</a></li>
+                <li><a href="#">T-Shirts</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <p><a href="#" class="nav-link">Accessories</a></p>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="#">Hats</a></li>
+                <li><a href="#">Collars</a></li>
+                <li><a href="#">Shoes</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p><a href="#about-div" class="nav-link">About</a></p>
+          </div>
+        </li>
+      </ul>
       <div class="cart-div">
         <img src="./img/cart.png" alt="cart-button" class="cart-button" />
       </div>
@@ -202,7 +233,7 @@
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="Enter your email..."
+                  placeholder="yourname@example.com"
                   size="40"
                 />
               </p>
@@ -232,14 +263,14 @@
           <p>
             Cool Dogs is a company founded by two sisters who believe that our
             little canine friends deserve as much love as we can give them.
-            That's why we create clothes to keep them warm and beautiful! 
+            That's why we create clothes to keep them warm and beautiful. 
           </p>
           <p>
             After creating many clothes for the dogs in our family, we decided
             to create Cool Dogs to share our designs with the world. All of our
             products are handmade with love and have soft and quality materials.
             We hope all the dogs and their human friends enjoy very much their
-            Cool Dogs piece!
+            Cool Dogs piece.
           </p>
         </div>
       </section>
