@@ -1,5 +1,6 @@
-# A product landing page
+# Cool dogs ecommerce product landing page
 
-Responsive product landing page with a carousel of images and a video.
+- Responsive product landing page for a made up company that sales clothes for small dogs.
+- UI design, HTML and CSS.
 
-Published at: https://melisandoval.github.io/FCC-Project3-Product-Landing-Page/product.html
+Live version: https://melisandoval.github.io/fcc-cool-dogs-product-landing-page/ .
