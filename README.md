@@ -4,3 +4,5 @@
 - UI design, HTML and CSS.
 
 Live version: https://melisandoval.github.io/fcc-cool-dogs-product-landing-page/ 
+
+![cool-dogs-product-page](https://user-images.githubusercontent.com/94930294/211426075-a6c797ec-6338-4c6c-80bb-fe66abd68bc7.gif)
